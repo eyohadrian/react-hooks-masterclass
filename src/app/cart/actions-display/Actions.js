@@ -1,32 +1,12 @@
 import {withStyles} from "@material-ui/core";
-import React, {useEffect} from 'react';
+import React from 'react';
 import Button from "@material-ui/core/Button";
-import {CART_ADD_ELEMENT, CART_CLEAR_CART, APP_CHANGE_SCREEN} from "../../actions";
+import {CART_ADD_ELEMENT, CART_CLEAR_CART, APP_CHANGE_SCREEN} from "../../../actions";
 import {useAppContext} from "../../../context";
 import {useActionsDisplayContext} from "./context";
+import style from './style';
 
-const defaultBtn = {
-  width: 80
-};
-
-const style = {
-  root: {
-    display: 'flex',
-    justifyContent: 'space-around'
-  },
-  btn: {
-    ...defaultBtn
-  },
-  submit: {
-    ...defaultBtn,
-    backgroundColor: '#23d647',
-    color: '#fff',
-    '&:hover': {
-      backgroundColor: '#1daa3b'
-    }
-  }
-};
-const Actions = withStyles(style)(({classes}) => {
+const Actions = withStyles(style.actions)(({classes}) => {
 
   const {dispatch} = useAppContext();
   const {references} = useActionsDisplayContext();

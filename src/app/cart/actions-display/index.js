@@ -3,20 +3,10 @@ import {withStyles} from "@material-ui/core";
 import Input from "./Input";
 import Actions from "./Actions";
 import {ActionsDisplayContextProvider} from './context';
-
-const style = {
-  root: {
-    gridColumn: '2',
-    gridRow: '2',
-    padding: '80px 160px',
-    display: 'flex',
-    flexDirection: 'column',
-    justifyContent: 'space-around'
-  }
-};
+import style from './style';
 
 
-const ActionsDisplay = withStyles(style)(({classes}) => {
+const ActionsDisplay = withStyles(style.actionsDisplay)(({classes}) => {
 
   return (
     <ActionsDisplayContextProvider>

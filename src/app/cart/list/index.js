@@ -3,14 +3,8 @@ import React from "react";
 import Typography from "@material-ui/core/Typography";
 import Items from "../../../components/items";
 import {useAppContext} from "../../../context";
+import style from "./style";
 
-const style = {
-  root: {
-    gridColumn: '1',
-    gridRow: '2',
-    padding: '40px 80px' ,
-  }
-};
 const List = withStyles(style)(({classes}) => {
   const {state} = useAppContext();
 

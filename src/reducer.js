@@ -1,5 +1,5 @@
 import {useReducer} from "react";
-import {CART_ADD_ELEMENT, CART_CLEAR_CART, APP_CHANGE_SCREEN} from "./app/actions";
+import {CART_ADD_ELEMENT, CART_CLEAR_CART, APP_CHANGE_SCREEN} from "./actions";
 
 const initialState = {
   submit: false,

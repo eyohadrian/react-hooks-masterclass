@@ -1,19 +1,10 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 import {withStyles} from "@material-ui/core";
 import Cart from "./cart";
 import {useAppContext} from "../context";
 import ResumeScreen from "./resume-screen";
-import {CART_CLEAR_CART} from "./actions";
+import style from './style';
 
-const style = {
-  root: {
-    height: '100vh',
-    width: '100vw',
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center'
-  },
-};
 
 const App = withStyles(style)(({classes}) => {
   const {state} = useAppContext();
