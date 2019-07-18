@@ -2,13 +2,7 @@ import React from "react";
 import {Typography} from "@material-ui/core/index";
 import Item from "./Item";
 import withStyles from "@material-ui/core/styles/withStyles";
-
-const style = {
-  root: {
-    height: 400,
-    overflow: 'scroll'
-  }
-};
+import style from './style';
 
 const Items = withStyles(style)(({list}) => {
   return (
