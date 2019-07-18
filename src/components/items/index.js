@@ -4,9 +4,9 @@ import Item from "./Item";
 import withStyles from "@material-ui/core/styles/withStyles";
 import style from './style';
 
-const Items = withStyles(style)(({list}) => {
+const Items = withStyles(style)(({list, classes}) => {
   return (
-    <ul>
+    <ul className={classes.root}>
       {list.length ? list.map(name => <Item name={name}/>) : <Typography variant={"subtitle1"}>No items</Typography>}
     </ul>
   )
