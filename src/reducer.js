@@ -1,4 +1,3 @@
-import {useReducer} from "react";
 import {CART_ADD_ELEMENT, CART_CLEAR_CART, APP_CHANGE_SCREEN} from "./actions";
 
 const initialState = {
@@ -20,4 +19,3 @@ const reducer = (state = initialState, action) => {
   return newState;
 };
 
-export default () => useReducer(reducer, initialState)
