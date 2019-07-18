@@ -12,7 +12,6 @@ const List = withStyles(style)(({classes}) => {
         <Typography variant={"h3"}>List</Typography>
         <Typography variant={"h4"}>Nº items {0}</Typography>
       </div>
-      <Items list={[]}/>
     </div>
   )
 });
