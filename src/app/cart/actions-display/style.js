@@ -16,6 +16,7 @@ export default {
 
   actions: {
   root: {
+    width: '400px',
     display: 'flex',
     justifyContent: 'space-around'
   },

@@ -5,9 +5,7 @@ import {useActionsDisplayContext} from "./context";
 const Input = () => {
   const {references} = useActionsDisplayContext();
   return (
-    <React.Fragment>
-      <TextField inputRef={references.name} label={"Name"} fullWidth />
-    </React.Fragment>
+    <TextField inputRef={references.name} label={"Name"} fullWidth />
   )
 };
 

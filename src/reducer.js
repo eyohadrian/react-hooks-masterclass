@@ -13,7 +13,9 @@ const reducer = (state = initialState, action) => {
     newState.list = [action.name, ...state.list];
   }
   if (action.type === CART_CLEAR_CART) {
-    newState.list = [];
+    if (state.list.length > 0) {
+      newState.list = [];
+    }
   }
   if (action.type === APP_CHANGE_SCREEN)
     newState.submit = !state.submit;
